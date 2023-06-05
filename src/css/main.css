@@ -1,0 +1,23 @@
+@import url("/src/css/font.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-hidden {
+	display: none;
+	/* Add any additional properties you want here */
+}
+
+.custom-block {
+	display: block;
+	/* Add any additional properties you want here */
+}
+
+.custom-inline {
+	display: inline;
+	/* Add any additional properties you want here */
+}
+
+.custom-inline-block {
+	display: inline-block;
+}
