@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Car-Rent</title>
-		<link rel="stylesheet" href="/public/build/output.css" />
+		<link rel="stylesheet" href="./build/output.css" />
 	</head>
 	<body class="bg-stone-100 container mx-auto px-6 mt-8 2xl:mt-10 select-none">
 		<!-- remove lg:mx-16 -->
@@ -79,6 +79,7 @@
 						<img src="/asstes/svg/setting.svg" alt="setting" />
 					</div>
 				</div>
+				<!--  mode -->
 			</div>
 		</div>
 		<!-- phone-serch-bar -->
@@ -698,11 +699,25 @@
 							>
 						</div>
 						<!-- icon -->
-						<div>
-							<img
-								src="/asstes/svg/Vector-nofiell.svg"
-								alt="Vector-nofiell"
-							/>
+						<div x-data="{like : 0}">
+							<svg
+								:class="like === 1 ? 'fill-red-600 stroke-none' : '' "
+								@click="like = 1"
+								class="cursor-pointer h-6 w-6"
+								viewBox="0 0 22 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									:class="like === 1 ? 'stroke-none' : '' "
+									@click="like = 1"
+									d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.68998C1 3.59998 3.49 1.09998 6.56 1.09998C8.38 1.09998 9.99 1.97998 11 3.33998C12.01 1.97998 13.63 1.09998 15.44 1.09998C18.51 1.09998 21 3.59998 21 6.68998C21 13.69 14.52 17.82 11.62 18.81Z"
+									stroke="#90A3BF"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
 						</div>
 					</div>
 					<div
@@ -777,8 +792,25 @@
 							>
 						</div>
 						<!-- icon -->
-						<div>
-							<img src="/asstes/svg/Vector-red.svg" alt="Vector-red" />
+						<div x-data="{like : 0}">
+							<svg
+								:class="like === 1 ? 'fill-red-600 stroke-none' : '' "
+								@click="like = 1"
+								class="cursor-pointer h-6 w-6"
+								viewBox="0 0 22 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									:class="like === 1 ? 'stroke-none' : '' "
+									@click="like = 1"
+									d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.68998C1 3.59998 3.49 1.09998 6.56 1.09998C8.38 1.09998 9.99 1.97998 11 3.33998C12.01 1.97998 13.63 1.09998 15.44 1.09998C18.51 1.09998 21 3.59998 21 6.68998C21 13.69 14.52 17.82 11.62 18.81Z"
+									stroke="#90A3BF"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
 						</div>
 					</div>
 					<div
@@ -823,7 +855,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- footer-btn&price -->
 					<div class="flex items-center justify-between w-full mr-4 lg:mr-0">
 						<div>
@@ -853,11 +884,25 @@
 							>
 						</div>
 						<!-- icon -->
-						<div>
-							<img
-								src="/asstes/svg/Vector-nofiell.svg"
-								alt="Vector-nofiell"
-							/>
+						<div x-data="{like : 0}">
+							<svg
+								:class="like === 1 ? 'fill-red-600 stroke-none' : '' "
+								@click="like = 1"
+								class="cursor-pointer h-6 w-6"
+								viewBox="0 0 22 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									:class="like === 1 ? 'stroke-none' : '' "
+									@click="like = 1"
+									d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.68998C1 3.59998 3.49 1.09998 6.56 1.09998C8.38 1.09998 9.99 1.97998 11 3.33998C12.01 1.97998 13.63 1.09998 15.44 1.09998C18.51 1.09998 21 3.59998 21 6.68998C21 13.69 14.52 17.82 11.62 18.81Z"
+									stroke="#90A3BF"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
 						</div>
 					</div>
 					<div
@@ -902,7 +947,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- footer-btn&price -->
 					<div class="flex items-center justify-between w-full mr-4 lg:mr-0">
 						<div>
@@ -932,8 +976,25 @@
 							>
 						</div>
 						<!-- icon -->
-						<div>
-							<img src="/asstes/svg/Vector-red.svg" alt="Vector-red" />
+						<div x-data="{like : 0}">
+							<svg
+								:class="like === 1 ? 'fill-red-600 stroke-none' : '' "
+								@click="like = 1"
+								class="cursor-pointer h-6 w-6"
+								viewBox="0 0 22 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									:class="like === 1 ? 'stroke-none' : '' "
+									@click="like = 1"
+									d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.68998C1 3.59998 3.49 1.09998 6.56 1.09998C8.38 1.09998 9.99 1.97998 11 3.33998C12.01 1.97998 13.63 1.09998 15.44 1.09998C18.51 1.09998 21 3.59998 21 6.68998C21 13.69 14.52 17.82 11.62 18.81Z"
+									stroke="#90A3BF"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
 						</div>
 					</div>
 					<div
@@ -994,9 +1055,9 @@
 			</div>
 			<!-- Desktop -->
 			<!-- one-Desktop -->
-			<div>
+			<div class="custom-hidden xl:block">
 				<div
-					class="flex flex-col items-start justify-center bg-white rounded-xl p-4 min-w-max custom-hidden xl:block"
+					class="flex flex-col items-start justify-center bg-white rounded-xl p-4 min-w-max"
 				>
 					<!-- header -->
 					<div class="flex justify-between w-full">
@@ -1008,8 +1069,25 @@
 							>
 						</div>
 						<!-- icon -->
-						<div>
-							<img src="/asstes/svg/Vector-red.svg" alt="Vector-red" />
+						<div x-data="{like : 0}">
+							<svg
+								:class="like === 1 ? 'fill-red-600 stroke-none' : '' "
+								@click="like = 1"
+								class="cursor-pointer h-6 w-6"
+								viewBox="0 0 22 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									:class="like === 1 ? 'stroke-none' : '' "
+									@click="like = 1"
+									d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.68998C1 3.59998 3.49 1.09998 6.56 1.09998C8.38 1.09998 9.99 1.97998 11 3.33998C12.01 1.97998 13.63 1.09998 15.44 1.09998C18.51 1.09998 21 3.59998 21 6.68998C21 13.69 14.52 17.82 11.62 18.81Z"
+									stroke="#90A3BF"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
 						</div>
 					</div>
 					<div
@@ -1069,7 +1147,7 @@
 				</div>
 			</div>
 			<!-- tow-Desktop -->
-			<div>
+			<div class="custom-hidden xl:block">
 				<div
 					class="flex flex-col items-start justify-center bg-white rounded-xl p-4 min-w-max custom-hidden xl:block"
 				>
@@ -1083,11 +1161,25 @@
 							>
 						</div>
 						<!-- icon -->
-						<div>
-							<img
-								src="/asstes/svg/Vector-nofiell.svg"
-								alt="Vector-nofiell"
-							/>
+						<div x-data="{like : 0}">
+							<svg
+								:class="like === 1 ? 'fill-red-600 stroke-none' : '' "
+								@click="like = 1"
+								class="cursor-pointer h-6 w-6"
+								viewBox="0 0 22 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									:class="like === 1 ? 'stroke-none' : '' "
+									@click="like = 1"
+									d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.68998C1 3.59998 3.49 1.09998 6.56 1.09998C8.38 1.09998 9.99 1.97998 11 3.33998C12.01 1.97998 13.63 1.09998 15.44 1.09998C18.51 1.09998 21 3.59998 21 6.68998C21 13.69 14.52 17.82 11.62 18.81Z"
+									stroke="#90A3BF"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
 						</div>
 					</div>
 					<div
@@ -1161,8 +1253,25 @@
 							>
 						</div>
 						<!-- icon -->
-						<div>
-							<img src="/asstes/svg/Vector-red.svg" alt="Vector-red" />
+						<div x-data="{like : 0}">
+							<svg
+								:class="like === 1 ? 'fill-red-600 stroke-none' : '' "
+								@click="like = 1"
+								class="cursor-pointer h-6 w-6"
+								viewBox="0 0 22 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									:class="like === 1 ? 'stroke-none' : '' "
+									@click="like = 1"
+									d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.68998C1 3.59998 3.49 1.09998 6.56 1.09998C8.38 1.09998 9.99 1.97998 11 3.33998C12.01 1.97998 13.63 1.09998 15.44 1.09998C18.51 1.09998 21 3.59998 21 6.68998C21 13.69 14.52 17.82 11.62 18.81Z"
+									stroke="#90A3BF"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
 						</div>
 					</div>
 					<div
@@ -1222,7 +1331,7 @@
 				</div>
 			</div>
 			<!-- four-Desktop -->
-			<div>
+			<div class="custom-hidden xl:block">
 				<div
 					class="flex flex-col items-start justify-center bg-white rounded-xl p-4 min-w-max custom-hidden xl:block"
 				>
@@ -1236,11 +1345,25 @@
 							>
 						</div>
 						<!-- icon -->
-						<div>
-							<img
-								src="/asstes/svg/Vector-nofiell.svg"
-								alt="Vector-nofiell"
-							/>
+						<div x-data="{like : 0}">
+							<svg
+								:class="like === 1 ? 'fill-red-600 stroke-none' : '' "
+								@click="like = 1"
+								class="cursor-pointer h-6 w-6"
+								viewBox="0 0 22 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									:class="like === 1 ? 'stroke-none' : '' "
+									@click="like = 1"
+									d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.68998C1 3.59998 3.49 1.09998 6.56 1.09998C8.38 1.09998 9.99 1.97998 11 3.33998C12.01 1.97998 13.63 1.09998 15.44 1.09998C18.51 1.09998 21 3.59998 21 6.68998C21 13.69 14.52 17.82 11.62 18.81Z"
+									stroke="#90A3BF"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
 						</div>
 					</div>
 					<div
@@ -1301,7 +1424,7 @@
 			</div>
 		</div>
 		<!-- Show More Car -->
-		<div class="mt-12 mb-12 flex items-center justify-center w-full">
+		<div class="lg:my-12 my-8 flex items-center justify-center w-full">
 			<span
 				class="bg-blue-600 py-3 px-4 rounded-lg lg:px-5 font-semibold text-white cursor-pointer"
 				>Show More Car</span
@@ -1386,6 +1509,8 @@
 				>
 			</div>
 		</div>
+		<!-- alpinejs.dev -->
+		<script src="//unpkg.com/alpinejs" defer></script>
 	</body>
 </html>
 
