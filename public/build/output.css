@@ -787,6 +787,9 @@ video {
 .fill-red-600{
   fill: #dc2626;
 }
+.fill-white{
+  fill: #fff;
+}
 .stroke-none{
   stroke: none;
 }
